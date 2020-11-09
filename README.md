@@ -18,7 +18,5 @@ Click the "IIS Express" button on the top of Visual Studio to run the Web API.
 
 When the application is running:
 
-- [Swagger JSON URL](https://localhost:44343/swagger/v1/swagger.json)
-
 - [Swagger Doccumentation URL](https://localhost:44343/swagger)
 
