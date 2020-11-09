@@ -14,53 +14,53 @@
             Em caso de erro, retorna 404 (Not Found)
             </returns>
         </member>
-        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.GetRevistas">
+        <member name="M:Ivirson.LojaHQ.API.Controllers.ProdutosController.GetProdutos">
             <summary>
-            Serviço que retorna a lista de Revistas cadastradas no banco de dados e com status "ativo"
+            Serviço que retorna a lista de Produtos cadastrados no banco de dados e com status "ativo"
             </summary>
             <returns>
-            Retorna a lista de Revistas
+            Retorna a lista de Produtos
             </returns>
         </member>
-        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.GetRevista(System.Int32)">
+        <member name="M:Ivirson.LojaHQ.API.Controllers.ProdutosController.GetProduto(System.Int32)">
             <summary>
-            Método que retorna, em detalhes, uma Revista que esteja ativa no banco de dados
+            Método que retorna, em detalhes, um Produto que esteja ativo no banco de dados
             </summary>
-            <param name="id">Identificadoor da revista a ser detalhada</param>
+            <param name="id">Identificador da produto a ser detalhado</param>
             <returns>
-            Retorna uma Revista, caso encontre. 
+            Retorna um Produto, caso encontre. 
             Caso contrário, retorna código 404 (Not Found)
             </returns>
         </member>
-        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.PutRevista(System.Int32,Ivirson.LojaHQ.Models.Revista)">
+        <member name="M:Ivirson.LojaHQ.API.Controllers.ProdutosController.PutProduto(System.Int32,Ivirson.LojaHQ.Models.Produto)">
             <summary>
-            Método de edição de uma Revista previamente existente
+            Método de edição de um Produto previamente existente
             </summary>
-            <param name="id">Identificadoor da revista a ter suas informações alteradas</param>
-            <param name="revista">Objeto com as alterações</param>
+            <param name="id">Identificador da produto a ter suas informações alteradas</param>
+            <param name="produto">Objeto com as alterações</param>
             <returns>
             Retorna apenas o código de sucesso, em caso de sucesso.
-            Caso o Id enviado seja diferente do Id da revista enviada, retorna BadRequest.
-            Caso o Id enviado não corresponda a um Revista válida, retorna código 404 (Not Found) 
+            Caso o Id enviado seja diferente do Id do produto enviado, retorna BadRequest.
+            Caso o Id enviado não corresponda a um Produto válido, retorna código 404 (Not Found) 
             </returns>
         </member>
-        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.PostRevista(Ivirson.LojaHQ.Models.Revista)">
+        <member name="M:Ivirson.LojaHQ.API.Controllers.ProdutosController.PostProduto(Ivirson.LojaHQ.Models.Produto)">
             <summary>
-            Metodo de criação de uma nova Revista no banco de dados
+            Metodo de criação de um novo Produto no banco de dados
             </summary>
-            <param name="revista">Revista a ser adicionada</param>
+            <param name="produto">Produto a ser adicionado</param>
             <returns>
-            Retorna a revista adicionada
+            Retorna o produto adicionado
             </returns>
         </member>
-        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.DeleteRevista(System.Int32)">
+        <member name="M:Ivirson.LojaHQ.API.Controllers.ProdutosController.DeleteProduto(System.Int32)">
             <summary>
-            Método de exclusão lógica de uma Revista previamente cadastrada no banco de dados
+            Método de exclusão lógica de um Produto previamente cadastrado no banco de dados
             </summary>
-            <param name="id">Identificadoor da revista a ser excluída</param>
+            <param name="id">Identificadoor do produto a ser excluído</param>
             <returns>
             Retorna apenas o código de sucesso, em caso de sucesso.
-            Caso o Id enviado não corresponda a um Revista válida, retorna código 404 (Not Found) 
+            Caso o Id enviado não corresponda a um Produto válido, retorna código 404 (Not Found) 
             </returns>
         </member>
     </members>

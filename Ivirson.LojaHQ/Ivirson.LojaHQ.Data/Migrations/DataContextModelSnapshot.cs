@@ -19,14 +19,14 @@ namespace Ivirson.LojaHQ.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Ivirson.LojaHQ.Models.Revista", b =>
+            modelBuilder.Entity("Ivirson.LojaHQ.Models.Produto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("Ativa")
+                    b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
                     b.Property<string>("Autor")
@@ -46,15 +46,15 @@ namespace Ivirson.LojaHQ.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Revistas");
+                    b.ToTable("Produtos");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            Ativa = true,
+                            Ativo = true,
                             Autor = "Maurício de Souza",
-                            DataCadastro = new DateTime(2020, 11, 9, 11, 14, 8, 581, DateTimeKind.Local).AddTicks(5510),
+                            DataCadastro = new DateTime(2020, 11, 9, 14, 22, 51, 137, DateTimeKind.Local).AddTicks(5304),
                             DataLancamento = new DateTime(1990, 2, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ImagemUrl = "https://organicsnewsbrasil.com.br/wp-content/uploads/2016/01/Revista-Salvando-Vidas_Capa.jpg",
                             Titulo = "Turma da Mônica - Revista 1"
@@ -62,9 +62,9 @@ namespace Ivirson.LojaHQ.Data.Migrations
                         new
                         {
                             Id = 2,
-                            Ativa = true,
+                            Ativo = true,
                             Autor = "Akira Toryama",
-                            DataCadastro = new DateTime(2020, 11, 9, 11, 14, 8, 586, DateTimeKind.Local).AddTicks(9647),
+                            DataCadastro = new DateTime(2020, 11, 9, 14, 22, 51, 138, DateTimeKind.Local).AddTicks(5347),
                             DataLancamento = new DateTime(1989, 10, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ImagemUrl = "http://www.guiadosquadrinhos.com/edicao/ShowImage.aspx?id=22314&path=conrad/d/dr03310001.jpg&w=400&h=604",
                             Titulo = "Dragon Ball Z - Revista 1"
@@ -72,9 +72,9 @@ namespace Ivirson.LojaHQ.Data.Migrations
                         new
                         {
                             Id = 3,
-                            Ativa = true,
+                            Ativo = true,
                             Autor = "Marvel Comics",
-                            DataCadastro = new DateTime(2020, 11, 9, 11, 14, 8, 586, DateTimeKind.Local).AddTicks(9966),
+                            DataCadastro = new DateTime(2020, 11, 9, 14, 22, 51, 138, DateTimeKind.Local).AddTicks(5411),
                             DataLancamento = new DateTime(2000, 8, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ImagemUrl = "https://cdn.awsli.com.br/393/393351/produto/40009441/15cfeba375.jpg",
                             Titulo = "Vingadores - Revista 1"

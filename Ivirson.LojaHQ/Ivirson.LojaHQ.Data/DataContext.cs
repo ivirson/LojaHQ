@@ -10,7 +10,7 @@ namespace Ivirson.LojaHQ.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Revista> Revistas { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -19,8 +19,8 @@ namespace Ivirson.LojaHQ.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Revista>().HasData(
-                new Revista()
+            modelBuilder.Entity<Produto>().HasData(
+                new Produto()
                 {
                     Id = 1,
                     Titulo = "Turma da Mônica - Revista 1",
@@ -28,7 +28,7 @@ namespace Ivirson.LojaHQ.Data
                     DataLancamento = new DateTime(1990, 02, 20),
                     ImagemUrl = "https://organicsnewsbrasil.com.br/wp-content/uploads/2016/01/Revista-Salvando-Vidas_Capa.jpg"
                 },
-                new Revista()
+                new Produto()
                 {
                     Id = 2,
                     Titulo = "Dragon Ball Z - Revista 1",
@@ -36,7 +36,7 @@ namespace Ivirson.LojaHQ.Data
                     DataLancamento = new DateTime(1989, 10, 05),
                     ImagemUrl = "http://www.guiadosquadrinhos.com/edicao/ShowImage.aspx?id=22314&path=conrad/d/dr03310001.jpg&w=400&h=604"
                 },
-                new Revista()
+                new Produto()
                 {
                     Id = 3,
                     Titulo = "Vingadores - Revista 1",

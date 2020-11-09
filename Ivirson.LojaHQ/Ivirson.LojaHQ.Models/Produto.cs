@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ivirson.LojaHQ.Models
 {
-    public class Revista
+    public class Produto
     {
-        public Revista()
+        public Produto()
         {
-            Ativa = true;
+            Ativo = true;
             DataCadastro = DateTime.Now;
         }
 
@@ -17,6 +17,6 @@ namespace Ivirson.LojaHQ.Models
         public string ImagemUrl { get; set; }
         public DateTime DataLancamento { get; set; }
         public DateTime DataCadastro { get; set; }
-        public bool Ativa { get; set; }
+        public bool Ativo { get; set; }
     }
 }
