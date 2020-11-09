@@ -29,7 +29,7 @@ namespace Ivirson.LojaHQ.API.Controllers
         [Authorize]
         public IActionResult GetProdutos()
         {
-            var produtos = _context.Produtos.Where(r => r.Ativo).ToList();
+            var produtos = _context.Produtos.Where(p => p.Ativo).ToList();
             return Ok(produtos);
         }
 

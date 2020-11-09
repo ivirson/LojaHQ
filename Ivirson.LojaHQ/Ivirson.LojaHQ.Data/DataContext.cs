@@ -11,6 +11,8 @@ namespace Ivirson.LojaHQ.Data
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<ProdutoPedido> ProdutosPedidos { get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -25,6 +27,7 @@ namespace Ivirson.LojaHQ.Data
                     Id = 1,
                     Titulo = "Turma da Mônica - Revista 1",
                     Autor = "Maurício de Souza",
+                    Quantidade = 6,
                     DataLancamento = new DateTime(1990, 02, 20),
                     ImagemUrl = "https://organicsnewsbrasil.com.br/wp-content/uploads/2016/01/Revista-Salvando-Vidas_Capa.jpg"
                 },
@@ -33,6 +36,7 @@ namespace Ivirson.LojaHQ.Data
                     Id = 2,
                     Titulo = "Dragon Ball Z - Revista 1",
                     Autor = "Akira Toryama",
+                    Quantidade = 4,
                     DataLancamento = new DateTime(1989, 10, 05),
                     ImagemUrl = "http://www.guiadosquadrinhos.com/edicao/ShowImage.aspx?id=22314&path=conrad/d/dr03310001.jpg&w=400&h=604"
                 },
@@ -41,6 +45,7 @@ namespace Ivirson.LojaHQ.Data
                     Id = 3,
                     Titulo = "Vingadores - Revista 1",
                     Autor = "Marvel Comics",
+                    Quantidade = 5,
                     DataLancamento = new DateTime(2000, 08, 15),
                     ImagemUrl = "https://cdn.awsli.com.br/393/393351/produto/40009441/15cfeba375.jpg"
                 }

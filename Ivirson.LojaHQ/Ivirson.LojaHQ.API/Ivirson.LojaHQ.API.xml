@@ -63,5 +63,30 @@
             Caso o Id enviado não corresponda a um Produto válido, retorna código 404 (Not Found) 
             </returns>
         </member>
+        <member name="M:Ivirson.LojaHQ.API.Controllers.VitrineController.GetProdutos">
+            <summary>
+            Serviço que retorna a lista de Produtos disponíveis para compra"
+            </summary>
+            <returns>
+            Retorna a lista de Produtos
+            </returns>
+        </member>
+        <member name="M:Ivirson.LojaHQ.API.Controllers.VitrineController.GetProduto(System.Int32)">
+            <summary>
+            Método que retorna, em detalhes, um Produto que esteja disponível para compra
+            </summary>
+            <param name="id">Identificador da produto a ser detalhado</param>
+            <returns>
+            Retorna um Produto, caso encontre. 
+            Caso contrário, retorna código 404 (Not Found)
+            </returns>
+        </member>
+        <member name="M:Ivirson.LojaHQ.API.Controllers.VitrineController.RealizarPedido(Ivirson.LojaHQ.Models.Pedido)">
+            <summary>
+            Método que salva o pedido, atualizando o estoque dos produtos envolvidos
+            </summary>
+            <param name="pedido">Objeto que contém as informações do pedido, bem como os seus itens</param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
