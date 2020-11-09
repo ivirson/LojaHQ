@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Ivirson.LojaHQ.Data;
 using Ivirson.LojaHQ.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Ivirson.LojaHQ.API.Controllers
 {
@@ -25,6 +26,7 @@ namespace Ivirson.LojaHQ.API.Controllers
         /// Retorna a lista de Produtos
         /// </returns>
         [HttpGet]
+        [Authorize]
         public IActionResult GetProdutos()
         {
             var produtos = _context.Produtos.Where(r => r.Ativo).ToList();
@@ -41,6 +43,7 @@ namespace Ivirson.LojaHQ.API.Controllers
         /// Caso contrário, retorna código 404 (Not Found)
         /// </returns>
         [HttpGet("{id}")]
+        [Authorize]
         public IActionResult GetProduto(int id)
         {
             var produto = _context.Produtos.Find(id);
@@ -65,6 +68,7 @@ namespace Ivirson.LojaHQ.API.Controllers
         /// Caso o Id enviado não corresponda a um Produto válido, retorna código 404 (Not Found) 
         /// </returns>
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult PutProduto(int id, Produto produto)
         {
             if (id != produto.Id)
@@ -102,6 +106,7 @@ namespace Ivirson.LojaHQ.API.Controllers
         /// Retorna o produto adicionado
         /// </returns>
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult PostProduto(Produto produto)
         {
             _context.Produtos.Add(produto);
@@ -120,6 +125,7 @@ namespace Ivirson.LojaHQ.API.Controllers
         /// Caso o Id enviado não corresponda a um Produto válido, retorna código 404 (Not Found) 
         /// </returns>
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteProduto(int id)
         {
             var produto = _context.Produtos.Find(id);
