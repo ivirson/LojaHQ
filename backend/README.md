@@ -6,9 +6,9 @@ This project was developed with [.NET Core](https://docs.microsoft.com/pt-br/dot
 
 On [Visual Studio](https://visualstudio.microsoft.com/pt-br/):
 
-  - Run `dotnet ef migrations add Initial --Project Ivirson.LojaHQ.API` for create a Initial Migration. 
+  - Run `dotnet ef migrations add Initial --project Ivirson.LojaHQ.Data` for create a Initial Migration. 
 
-  - Run `dotnet ef database update --Project Ivirson.LojaHQ.API` for generate the SQL Server Database. 
+  - Run `dotnet ef database update --project Ivirson.LojaHQ.Data` for generate the SQL Server Database. 
 
 ## Build
 
