@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ivirson.LojaHQ.API</name>
+    </assembly>
+    <members>
+        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.GetRevistas">
+            <summary>
+            Serviço que retorna a lista de Revistas cadastradas no banco de dados e com status "ativo"
+            </summary>
+            <returns>
+            Retorna a lista de Revistas
+            </returns>
+        </member>
+        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.GetRevista(System.Int32)">
+            <summary>
+            Método que retorna, em detalhes, uma Revista que esteja ativa no banco de dados
+            </summary>
+            <param name="id">Identificadoor da revista a ser detalhada</param>
+            <returns>
+            Retorna uma Revista, caso encontre. 
+            Caso contrário, retorna código 404 (Not Found)
+            </returns>
+        </member>
+        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.PutRevista(System.Int32,Ivirson.LojaHQ.Models.Revista)">
+            <summary>
+            Método de edição de uma Revista previamente existente
+            </summary>
+            <param name="id">Identificadoor da revista a ter suas informações alteradas</param>
+            <param name="revista">Objeto com as alterações</param>
+            <returns>
+            Retorna apenas o código de sucesso, em caso de sucesso.
+            Caso o Id enviado seja diferente do Id da revista enviada, retorna BadRequest.
+            Caso o Id enviado não corresponda a um Revista válida, retorna código 404 (Not Found) 
+            </returns>
+        </member>
+        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.PostRevista(Ivirson.LojaHQ.Models.Revista)">
+            <summary>
+            Metodo de criação de uma nova Revista no banco de dados
+            </summary>
+            <param name="revista">Revista a ser adicionada</param>
+            <returns>
+            Retorna a revista adicionada
+            </returns>
+        </member>
+        <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.DeleteRevista(System.Int32)">
+            <summary>
+            Método de exclusão lógica de uma Revista previamente cadastrada no banco de dados
+            </summary>
+            <param name="id">Identificadoor da revista a ser excluída</param>
+            <returns>
+            Retorna apenas o código de sucesso, em caso de sucesso.
+            Caso o Id enviado não corresponda a um Revista válida, retorna código 404 (Not Found) 
+            </returns>
+        </member>
+    </members>
+</doc>
