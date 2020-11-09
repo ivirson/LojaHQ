@@ -4,6 +4,16 @@
         <name>Ivirson.LojaHQ.API</name>
     </assembly>
     <members>
+        <member name="M:Blog.API.Controllers.LoginController.Autenticar(Ivirson.LojaHQ.Models.Usuario)">
+            <summary>
+            Método que retorna um usuário logado e um token de autenticação
+            </summary>
+            <param name="model">Informações do Usuario a logar</param>
+            <returns>
+            Em caso de sucesso, retorna o Usuário autenticado e um token
+            Em caso de erro, retorna 404 (Not Found)
+            </returns>
+        </member>
         <member name="M:Ivirson.LojaHQ.API.Controllers.RevistasController.GetRevistas">
             <summary>
             Serviço que retorna a lista de Revistas cadastradas no banco de dados e com status "ativo"
