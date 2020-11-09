@@ -28,6 +28,7 @@ namespace Ivirson.LojaHQ.Data
                     Titulo = "Turma da Mônica - Revista 1",
                     Autor = "Maurício de Souza",
                     Quantidade = 6,
+                    Preco = 2.99M,
                     DataLancamento = new DateTime(1990, 02, 20),
                     ImagemUrl = "https://organicsnewsbrasil.com.br/wp-content/uploads/2016/01/Revista-Salvando-Vidas_Capa.jpg"
                 },
@@ -37,8 +38,9 @@ namespace Ivirson.LojaHQ.Data
                     Titulo = "Dragon Ball Z - Revista 1",
                     Autor = "Akira Toryama",
                     Quantidade = 4,
+                    Preco = 2.59M,
                     DataLancamento = new DateTime(1989, 10, 05),
-                    ImagemUrl = "http://www.guiadosquadrinhos.com/edicao/ShowImage.aspx?id=22314&path=conrad/d/dr03310001.jpg&w=400&h=604"
+                    ImagemUrl = "https://lh3.googleusercontent.com/proxy/zR3zvI6x6GeYkvAHiQVSaRDX_jL0VBIy1pIZJvO4FwYUQwc3buhVcsIDbuzRa30op9PzJcS4sfc_vYwmcxu2E9Jl-aGizR5vQNLOtuyDDkQtS11kXU6dWTwAiSXLowYfHwwJ97d3nXiM8JR331iiYGzPCEtH"
                 },
                 new Produto()
                 {
@@ -46,8 +48,9 @@ namespace Ivirson.LojaHQ.Data
                     Titulo = "Vingadores - Revista 1",
                     Autor = "Marvel Comics",
                     Quantidade = 5,
+                    Preco = 3.99M,
                     DataLancamento = new DateTime(2000, 08, 15),
-                    ImagemUrl = "https://cdn.awsli.com.br/393/393351/produto/40009441/15cfeba375.jpg"
+                    ImagemUrl = "https://images-na.ssl-images-amazon.com/images/I/81czyYh+PWL.jpg"
                 }
             );
 
