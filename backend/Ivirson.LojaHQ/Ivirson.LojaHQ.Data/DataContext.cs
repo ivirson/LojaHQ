@@ -25,7 +25,8 @@ namespace Ivirson.LojaHQ.Data
                 new Produto()
                 {
                     Id = 1,
-                    Titulo = "Turma da Mônica - Revista 1",
+                    Titulo = "Turma da Mônica",
+                    Descricao = "Revista 1",
                     Autor = "Maurício de Souza",
                     Quantidade = 6,
                     Preco = 2.99M,
@@ -35,17 +36,19 @@ namespace Ivirson.LojaHQ.Data
                 new Produto()
                 {
                     Id = 2,
-                    Titulo = "Dragon Ball Z - Revista 1",
+                    Titulo = "Dragon Ball Z",
+                    Descricao = "Revista 1",
                     Autor = "Akira Toryama",
                     Quantidade = 4,
                     Preco = 2.59M,
                     DataLancamento = new DateTime(1989, 10, 05),
-                    ImagemUrl = "https://lh3.googleusercontent.com/proxy/zR3zvI6x6GeYkvAHiQVSaRDX_jL0VBIy1pIZJvO4FwYUQwc3buhVcsIDbuzRa30op9PzJcS4sfc_vYwmcxu2E9Jl-aGizR5vQNLOtuyDDkQtS11kXU6dWTwAiSXLowYfHwwJ97d3nXiM8JR331iiYGzPCEtH"
+                    ImagemUrl = "https://images-na.ssl-images-amazon.com/images/I/91pllXbnH1L.jpg"
                 },
                 new Produto()
                 {
                     Id = 3,
-                    Titulo = "Vingadores - Revista 1",
+                    Titulo = "Vingadores",
+                    Descricao = "Revista 1",
                     Autor = "Marvel Comics",
                     Quantidade = 5,
                     Preco = 3.99M,

@@ -12,6 +12,7 @@ namespace Ivirson.LojaHQ.Models
 
         public int Id { get; set; }
         public string Titulo { get; set; }
+        public string Descricao { get; set; }
         public string Autor { get; set; }
         public string ImagemUrl { get; set; }
         public int Quantidade { get; set; }
