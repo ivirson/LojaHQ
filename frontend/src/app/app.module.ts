@@ -13,6 +13,12 @@ import {
   MatToolbarModule
 } from '@angular/material';
 import { CardProdutoComponent } from './components/card-produto/card-produto.component';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { carrinhoReducer } from './core/state/cart/cart.reducer';
+import { CarrinhoEffects } from './core/state/cart/cart.effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,14 @@ import { CardProdutoComponent } from './components/card-produto/card-produto.com
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    StoreModule.forRoot({
+      cart: carrinhoReducer
+    }),
+    EffectsModule.forRoot([
+      CarrinhoEffects
+    ]),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

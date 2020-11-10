@@ -1,6 +1,7 @@
-export interface Produto {
-  id: number;
+export class Produto {
+  id?: number;
   titulo: string;
+  descricao: string;
   autor: string;
   imagemUrl: string;
   quantidade: number;

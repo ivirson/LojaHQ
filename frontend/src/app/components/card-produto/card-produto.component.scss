@@ -1,11 +1,37 @@
 .card-image {
-  width: 100%;
-  height: auto;
-  max-height: 290px;
+  max-height: 340px;
 }
 
 .preco-produto {
   font-size: 1.5rem;
   font-weight: bold;
   color: red;
+}
+
+::ng-deep .mat-card {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),
+              0 1px 1px 0 rgba(0,0,0,.14),
+              0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+.card-titulo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: .5rem !important;
+}
+
+.card-subtitulo {
+  font-size: .8rem;
+}
+
+.card-info {
+  font-style: italic;
+  font-size: .6rem;
+  margin-bottom: .5rem;
+}
+
+.mat-card-actions .mat-button, .mat-card-actions .mat-raised-button {
+  margin: .25rem 0;
 }

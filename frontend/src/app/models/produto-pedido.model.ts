@@ -1,8 +1,9 @@
 import { Produto } from './produto.model';
 
-export interface ProdutoPedido {
-  id: number;
+export class ProdutoPedido {
+  id?: number;
   produto: Produto;
   produtoId: number;
-  quantidade: number;
+  quantidade?: number;
+  previamenteAdicionado?: boolean;
 }
