@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +11,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatIconModule,
+  MatSelectModule,
   MatToolbarModule
 } from '@angular/material';
 import { CardProdutoComponent } from './components/card-produto/card-produto.component';
@@ -28,6 +30,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
@@ -35,6 +38,7 @@ import { environment } from '../environments/environment';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatSelectModule,
     StoreModule.forRoot({
       cart: carrinhoReducer
     }),

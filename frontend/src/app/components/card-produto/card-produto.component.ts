@@ -17,6 +17,7 @@ export class CardProdutoComponent implements OnInit {
 
   @Input() public produto: Produto;
   public pedido = new Pedido();
+  public arrQtd = [];
 
   constructor(
     private store$: Store<AppState>,
@@ -24,6 +25,9 @@ export class CardProdutoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    for (let i = 1; i <= this.produto.quantidade; i++) {
+      this.arrQtd.push(i);
+    }
   }
 
   public viewProductDetails(produtoId: number) {
